@@ -1,7 +1,7 @@
 .allProducts{
-    min-width: 1200px;
+    /* min-width: 1200px; 把原始碼移除*/
     background-color: #f7f8f9;
-    padding: 180px 0;
+    padding: 80px 20px;
 }
 
 .allProducts h3{
@@ -16,7 +16,6 @@
 .productsContainer{
     display: flex;
     margin: 0 auto;
-    width: 1200px;
 }
 
 .productsList{
@@ -28,7 +27,7 @@
 
 .productsList-ulcontainer
 {
-    margin: 0 0 0 40px;
+    /* margin: 0 0 0 40px; */
 }
 
 .productsListitem{
@@ -55,7 +54,7 @@ ul .active{
 .productsMenu{
     display: flex;
     flex-wrap: wrap;
-    width: 890px;
+    /* width: 890px; */
 }
 .productsMenu-box{
     position: relative;
@@ -66,7 +65,6 @@ ul .active{
     width: 270px;
     height: 340px;
     box-shadow: 0 20px 20px 0 rgb(0 0 0 / 10%);
-    
     
 }
 
@@ -161,7 +159,7 @@ ul .active{
     }
 
     .productsList{
-        width: 100%;
+        width: 95%;
         height: 52.5px;
         position: relative;
         top: 0;
@@ -169,7 +167,10 @@ ul .active{
 
     .productsList-ulcontainer{
         display: flex;
-        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        width: 100%;
+        overflow: auto;
     }
 
     .productsMenu{
@@ -189,7 +190,6 @@ ul .active{
         height: auto;
         box-shadow: none;
         padding: 25px 0;
-        width: 1060px;
         margin: 0 auto;
         border-bottom: 1px solid rgba(0,0,0,.05);
     }
@@ -201,6 +201,24 @@ ul .active{
 
     .productsListitem{
         font-size: 23px;
+        margin: 0 4px 0px 0;
     }
 }
+/* 加到media 讓它大於880px再限制寬度 */
+@media screen and (min-width:880px) {
+    .allProducts{
+        min-width: 1200px;
+        padding: 160px 0;
+    }
+
+    .productsMenu{
+        width: 890px;
+    }
+
+    .productsContainer{
+        width: 1200px;
+    }
+}
+
+
 

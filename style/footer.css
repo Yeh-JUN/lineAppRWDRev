@@ -1,5 +1,5 @@
 footer{
-    width: 1200px;
+    display: none;
     margin: 0 auto;
     padding: 0 20px 41px;
     box-sizing: border-box;
@@ -73,15 +73,80 @@ span{
     height: 5px;
     border-top: 1px solid #1e1e1e;
     border-right: 1px solid #1e1e1e;
-    transform: rotate(
-135deg
-);
+    transform: rotate(135deg);
     margin: 0 0 2px 5px;
 }
 
 .info-right :nth-child(2)
 {
     margin-right: 14px;
+}
+
+.hiddenFooter{
+    padding: 31px 20px 85px;
+    
+}
+
+.footerGreoup{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.hiddenFotterLinkItems{
+    font-size: 12px;
+    margin-top: 25px;
+    display:flex;
+
+}
+.linkItem{
+    margin-right: 14px;
+}
+.linkItem::after{
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    margin: 0 0 3px 14px;
+    vertical-align: bottom;
+    background-color: rgba(0,0,0,.2);
+}
+
+.snsLink{
+    display: flex;
+    margin-top: 16px;
+}
+
+.snsLink .snsLinkItem{
+    margin-right: 15px;
+}
+
+.joinicon{
+    width: max-content;
+    margin: 25px 0 0 -3px;
+    padding: 8px 11px 8px 12px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    color: gray;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.joinicon img{
+    height: 18px;
+    vertical-align: bottom;
+}
+
+
+@media screen and (min-width:890px) {
+    footer{
+        display: block;
+        width: 1200px;
+    }
+
+    .hiddenFooter{
+        display: none;
+    }
 }
 
 

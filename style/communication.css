@@ -1,5 +1,4 @@
 .commuicationArea{
-    min-width: 1200px;
     background-color: #f7f8f9;
     text-align: center;
     padding: 160px 0;
@@ -75,5 +74,11 @@
         width: 100%;
         font-size: 20px;
         margin: 0 auto 36px;
+    }
+}
+
+@media screen and (min-width:880px) {
+    .commuicationArea{
+        min-width: 1200px;
     }
 }
