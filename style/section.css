@@ -1,8 +1,10 @@
+
 section {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 
 .sectionGroup {
@@ -213,7 +215,7 @@ section::before {
     border-radius: 16px;
   }
 
-  .col img:nth-child(2){
+  .col-Txt .litte{
     height: 80px;
     width: 80px;
   }
