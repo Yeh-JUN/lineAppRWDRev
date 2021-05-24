@@ -93,29 +93,47 @@ ul .active{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
-    
-    /* flex-direction: column; */
+}
+
+.cover i{
+    font-size: 20px;
 }
 
 .aitems a{
     display: block;
-    /* justify-content: center;
+    /* justify-content:center;
     align-items: center; */
     text-align: center;
-    width: 200px;
+    width: 180px;
     height: 40px;
     line-height: 40px;
     margin: 10px 0px;
     border: 1px solid gray;
     background-color: rgb(0, 0, 0,0.9);
     color: white;
-    opacity: 0.9;
+}
+
+.aitems a i:first-child{
+    display: none;
+}
+.aitems a i.fa-apple{
+    font-size: 25px;
+    padding-right: 30px;
+}
+.aitems a i{
+    padding-right: 10px;
 }
 
 .aitems a:hover{
+    
     background-color:#07b53b;
     transition: all .3;
+}
+.aitems a:hover i:first-child{
+    display: inline-block;
+}
+.aitems a:hover i:last-child{
+    display: none;
 }
 
 .bankstyle
@@ -146,11 +164,6 @@ ul .active{
     line-height: 1.492;
     color: #616161;
     font-weight: 400;
-}
-
-.productsMenu-box:hover
-{
-    
 }
 
 @media screen and (max-width:878px) {

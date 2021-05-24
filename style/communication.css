@@ -1,7 +1,7 @@
 .commuicationArea{
     background-color: #f7f8f9;
     text-align: center;
-    padding: 160px 0;
+    padding: 160px 20px;
 }
 
 .commuicationArea h3
@@ -27,7 +27,7 @@
 }
 
 .comm-box{
-    width: 360px;
+    width: 33.3333%
 }
 .comm-box img{
     width: 100%;
@@ -44,12 +44,11 @@
     line-height: 1.6;
 }
 
-.item-model1{
-    margin: 0 60px 36px 0;
-}
-
-.item-model2{
-    margin-bottom:36px ;
+.item-model1,
+.item-model2
+{   
+    
+    margin-bottom: 0 0 36px 0;
 }
 
 

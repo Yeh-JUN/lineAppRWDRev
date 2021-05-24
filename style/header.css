@@ -81,7 +81,7 @@ span{
 .bannerAllItems{
     
     position: absolute;
-    top: 220px;
+    top: 140px;
     left: 20px;
 }
 
@@ -172,9 +172,16 @@ display: none;
     }
 }
 
+@media screen and (min-width:415px) {
+    .bannerAllItems{
+        top: 150px;
+        left: 50px;
+    }
+}
+
 @media screen and (min-width:890px) {
     .bannerAllItems{
-        top: 130px;
+        top: 220px;
         left: 150px;
         width: 837px;
     }
