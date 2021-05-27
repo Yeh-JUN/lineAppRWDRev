@@ -78,12 +78,10 @@ ul .active{
     border-radius: 4px;
     background-color: rgb(0, 0, 0,.9);
     opacity: 0.9;
-    
-    
 }
 
 .productsMenu-box:hover .cover{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -230,6 +228,10 @@ ul .active{
 
     .productsContainer{
         width: 1200px;
+    }
+
+    .productsMenu-box:hover .cover{
+        display: flex;
     }
 }
 
